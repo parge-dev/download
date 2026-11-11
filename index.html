@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      padding: 24px; background: #111827; color: #f9fafb;
+      font-family: Arial, sans-serif;
+    }
+    main {
+      width: min(560px, 100%); padding: 32px; text-align: center;
+      background: #1f2937; border: 1px solid #374151; border-radius: 18px;
+      box-shadow: 0 18px 50px #0006;
+    }
+    h1 { margin-top: 0; }
+    p { color: #cbd5e1; line-height: 1.5; }
+    button {
+      margin-top: 18px; padding: 14px 24px; border: 0; border-radius: 10px;
+      background: #2563eb; color: white; font-size: 16px; font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background: #1d4ed8; }
+    button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 3px; }
+    details { margin-top: 24px; text-align: left; }
+    pre {
+      white-space: pre-wrap; overflow-wrap: anywhere; padding: 14px;
+      border-radius: 8px; background: #111827; color: #d1d5db;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Download</h1>
+    <p>Click the button below to download the links from the list.</p>
+    <button id="downloadButton" type="button">Download List</button>
+    <details>
+      <summary>View list</summary>
+      <pre>https://www.amazon.ca/Lenovo-ThinkPad-Notebook-Computer-i5-8250U/dp/B0GP6Y27TP/ref=sr_1_3?crid=1IZLTM4LZNLF&amp;dib=eyJ2IjoiMSJ9.5Ah_iolsOi0AKCQL1OiHMmdjP7upe0DJFgpo-INLDWohJF7C61_QkwG4n6tYVw_SXUxrLAwkv0yTCYYic8PxxenSiHVPV_4O3hdfJAh7FbtZdp0dGpvBNkeseT7jP5nrMwPyZD0DtJoZUy4lNJ0GUd8u8Wi6MQZJM4GePJA8dnjeKVRXzBqCuQYix-ZpxEHL-A1jabbp6dZX83vfw343oIgYiIjA9g1NBLbsToK8ubrNbN03BPOZImObtTR6w5PNVQQUlUeEfQv5T2Ug6HINUJVMLEifwKfcJKm9HqFHycE.MW8ZZM0N2Ybvreh8qCq-L5nZFEBvhiA8FDZPLjFZI74&amp;dib_tag=se&amp;keywords=laptop&amp;qid=1794111532&amp;refinements=p_36%3A-33000%2Cp_n_g-1003119721111%3A23720048011%2Cp_n_g-1004209391091%3A7322169011%7C7322172011%2Cp_n_g-1003099804111%3A23703147011&amp;rnid=7322165011&amp;sbo=GW1QB%2BmqAsHTPf1jTZRSDA%3D%3D&amp;sprefix=laptop%2Caps%2C394&amp;sr=8-3
+
+
+
+https://www.amazon.ca/Razer-DeathAdder-Essential-Gaming-Mouse/dp/B094PS5RZQ/ref=sr_1_5?crid=VOS9244BXXQT&amp;dib=eyJ2IjoiMSJ9.AX3E0hvqOCsgM-_35eTCrZNXfQbH2Dc4ryy4n-9NRQOrFnhxgeCcdX3zmeiD7NIlGKbYcN6jyaBjPht8CH64DxaXN7vT96v0PF23MQb4tVAm9Gr0joLMahyNfCd4z7Qbly--6DeVUIM-L4oBhgWFw-j_Vu0d7Q-DiFaQJYexPcLP9swAEMVVxIGFp_2dPWCVXCHeIlw9bbLSjQmChnbaUG2Mog1vG7zsa8_3DdoEyxDgmFySChyaHilDYxe1Qdy2DESprp6uyB4MbNLF-oM4s00I1wrvbfdrQGz_kmaOw3A.ZBiFl-oLKMDTNw8e1roow0GAQyWvUiyr4OcYq5jS-Zg&amp;dib_tag=se&amp;keywords=mouse&amp;qid=1794146156&amp;refinements=p_36%3A-4900%2Cp_n_feature_browse-bin%3A23680025011&amp;rnid=12035759011&amp;sprefix=mouse%2Caps%2C302&amp;sr=8-5&amp;th=1</pre>
+    </details>
+  </main>
+  <script>
+    const listText = 'https://www.amazon.ca/Lenovo-ThinkPad-Notebook-Computer-i5-8250U/dp/B0GP6Y27TP/ref=sr_1_3?crid=1IZLTM4LZNLF&dib=eyJ2IjoiMSJ9.5Ah_iolsOi0AKCQL1OiHMmdjP7upe0DJFgpo-INLDWohJF7C61_QkwG4n6tYVw_SXUxrLAwkv0yTCYYic8PxxenSiHVPV_4O3hdfJAh7FbtZdp0dGpvBNkeseT7jP5nrMwPyZD0DtJoZUy4lNJ0GUd8u8Wi6MQZJM4GePJA8dnjeKVRXzBqCuQYix-ZpxEHL-A1jabbp6dZX83vfw343oIgYiIjA9g1NBLbsToK8ubrNbN03BPOZImObtTR6w5PNVQQUlUeEfQv5T2Ug6HINUJVMLEifwKfcJKm9HqFHycE.MW8ZZM0N2Ybvreh8qCq-L5nZFEBvhiA8FDZPLjFZI74&dib_tag=se&keywords=laptop&qid=1794111532&refinements=p_36%3A-33000%2Cp_n_g-1003119721111%3A23720048011%2Cp_n_g-1004209391091%3A7322169011%7C7322172011%2Cp_n_g-1003099804111%3A23703147011&rnid=7322165011&sbo=GW1QB%2BmqAsHTPf1jTZRSDA%3D%3D&sprefix=laptop%2Caps%2C394&sr=8-3\n\n\n\nhttps://www.amazon.ca/Razer-DeathAdder-Essential-Gaming-Mouse/dp/B094PS5RZQ/ref=sr_1_5?crid=VOS9244BXXQT&dib=eyJ2IjoiMSJ9.AX3E0hvqOCsgM-_35eTCrZNXfQbH2Dc4ryy4n-9NRQOrFnhxgeCcdX3zmeiD7NIlGKbYcN6jyaBjPht8CH64DxaXN7vT96v0PF23MQb4tVAm9Gr0joLMahyNfCd4z7Qbly--6DeVUIM-L4oBhgWFw-j_Vu0d7Q-DiFaQJYexPcLP9swAEMVVxIGFp_2dPWCVXCHeIlw9bbLSjQmChnbaUG2Mog1vG7zsa8_3DdoEyxDgmFySChyaHilDYxe1Qdy2DESprp6uyB4MbNLF-oM4s00I1wrvbfdrQGz_kmaOw3A.ZBiFl-oLKMDTNw8e1roow0GAQyWvUiyr4OcYq5jS-Zg&dib_tag=se&keywords=mouse&qid=1794146156&refinements=p_36%3A-4900%2Cp_n_feature_browse-bin%3A23680025011&rnid=12035759011&sprefix=mouse%2Caps%2C302&sr=8-5&th=1';
+    document.getElementById("downloadButton").addEventListener("click", () => {
+      const blob = new Blob([listText], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "list.txt";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html> 
